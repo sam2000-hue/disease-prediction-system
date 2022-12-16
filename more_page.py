@@ -251,17 +251,17 @@ def show_more_page():
             with st.expander("View The Distribution Of The Labelled Data Based on Blood MDVP:Jitter(%)"):
 
                 data = result.groupby(["MDVP:Jitter(%)"])["status"].mean().sort_values(ascending=True)
-                st.line_chart(data)
-        if st.button("View Project Documentation"):
-            st.subheader("About This Project")
-            with st.expander("View Project Documentation"):
-                st.write("[About The Project](https://drive.google.com/file/d/1P_kkvymKL5_S5Xm-ygz08kwn4TOYxscP/view?usp=drivesdk)")
-            st.subheader("Disclaimer")
-            with st.expander("View Disclaimer Documentation"):
-                st.write("[Project Disclaimer](https://www.freeprivacypolicy.com/live/5ba5a14d-9e54-45e6-aade-bfb867ac184d)")
-            st.subheader("Terms And Conditions")
-            with st.expander("View Terms And Conditions Documentation"):
-                st.write("[Project Terms And Conditions](https://www.freeprivacypolicy.com/live/0aaca50f-3b71-45b1-8b46-8753f28c2a81)")
+        #         st.line_chart(data)
+        # if st.button("View Project Documentation"):
+        #     st.subheader("About This Project")
+        #     with st.expander("View Project Documentation"):
+        #         st.write("[About The Project](https://drive.google.com/file/d/1P_kkvymKL5_S5Xm-ygz08kwn4TOYxscP/view?usp=drivesdk)")
+        #     st.subheader("Disclaimer")
+        #     with st.expander("View Disclaimer Documentation"):
+        #         st.write("[Project Disclaimer](https://www.freeprivacypolicy.com/live/5ba5a14d-9e54-45e6-aade-bfb867ac184d)")
+        #     st.subheader("Terms And Conditions")
+        #     with st.expander("View Terms And Conditions Documentation"):
+        #         st.write("[Project Terms And Conditions](https://www.freeprivacypolicy.com/live/0aaca50f-3b71-45b1-8b46-8753f28c2a81)")
                 
 
     st.write("___________________________________________________________")
